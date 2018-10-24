@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.v4.widget.DrawerLayout-->
+<android.support.v4.widget.DrawerLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    style="@style/matchParentStyle"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="end">
+
+    <LinearLayout
+        style="@style/matchParentStyle"
+        android:orientation="vertical">
+
+        <modules.general.ui.custom_views.CustomTitle
+            android:id="@+id/parentview_cs_title"
+            style="@style/matchWrapStyle"
+            />
+
+        <LinearLayout
+            android:id="@+id/parentview_lnr_content"
+            style="@style/matchParentStyle"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/small_margin"
+            >
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <modules.general.ui.custom_views.NavigationViews.MenuSample
+        android:id="@+id/parentview_nv_navigationview"
+        style="@style/wrapMatchStyle"
+        android:layout_gravity="end"
+        android:fitsSystemWindows="true"
+        />
+</android.support.v4.widget.DrawerLayout>
+
+    <!--</android.support.v4.widget.DrawerLayout>-->

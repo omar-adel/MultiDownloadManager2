@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/matchParentStyle">
+
+
+    <ScrollView
+        style="@style/matchParentStyle"
+        >
+
+        <LinearLayout
+            style="@style/matchParentStyle"
+            android:layout_margin="@dimen/small_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llDirectory"
+                style="@style/matchWrapStyle"
+                android:layout_marginTop="@dimen/medium_margin2"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/matchWrapStyle"
+                    android:text="@string/setDirTitle"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/txtvDirectory"
+                    style="@style/wrapStyle"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:text="@string/setDirSummary"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llType"
+                style="@style/matchWrapStyle"
+                android:layout_marginTop="@dimen/medium_margin2"
+                android:orientation="vertical">
+                <RadioGroup
+                    android:id="@+id/rgType"
+                    style="@style/wrapStyle"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/txtvType"
+                        style="@style/wrapStyle"
+                        android:text="@string/select_type"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_parallel"
+                        style="@style/wrapStyle"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:text="@string/parallel"
+                        android:textColor="@color/colorPrimary"
+                        android:checked="true"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_queue"
+                        style="@style/wrapStyle"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:text="@string/queue"
+                        android:textColor="@color/colorPrimary"
+                        />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llNotification"
+                style="@style/matchWrapStyle"
+                android:layout_marginTop="@dimen/medium_margin2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtvNotification"
+                    style="@style/wrapStyle"
+                    android:text="@string/showNotificationsTitle"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    />
+                <Switch
+                    android:id="@+id/switchNotification"
+                    style="@style/matchWrapStyle"
+                    android:text="@string/showNotifications"
+                    android:checked="true"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="@dimen/small_margin"
+                    /><!--gravity of the Switch-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llClearNotification"
+                style="@style/matchWrapStyle"
+                android:layout_marginTop="@dimen/medium_margin2"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/matchWrapStyle"
+                    android:text="@string/clearNotifications"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/txtvClearNotification"
+                    style="@style/wrapStyle"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:text="@string/clearNotifications"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

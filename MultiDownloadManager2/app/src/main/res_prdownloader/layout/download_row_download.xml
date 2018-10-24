@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/download_small_margin"
+        android:layout_toLeftOf="@+id/imgvPauseResume">
+
+        <TextView
+            android:id="@+id/txtvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#FF000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txtvProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtvName"
+            android:layout_marginTop="@dimen/download_small_margin"
+            android:textSize="14dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtvProgress"
+            android:indeterminate="false" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imgvPauseResume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/download_small_margin"
+        android:layout_toLeftOf="@+id/imgvCancel"
+        android:background="@drawable/download_ic_pause_circle_outline_black_36dp" />
+
+    <ImageView
+        android:id="@+id/imgvCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/download_small_margin"
+        android:layout_marginRight="@dimen/download_small_margin"
+        android:background="@drawable/download_ic_highlight_off_black_36dp" />
+
+</RelativeLayout>

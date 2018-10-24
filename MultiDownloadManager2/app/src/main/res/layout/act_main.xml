@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/matchParentStyle"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlDownload"
+        style="@style/matchWrapStyle"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/edUrl"
+            style="@style/matchWrapStyle"
+            android:layout_margin="@dimen/small_margin"
+            android:hint="@string/enterUrl"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/btnDownload"
+            style="@style/matchWrapStyle"
+            android:layout_below="@+id/edUrl"
+            android:layout_margin="@dimen/small_margin"
+            android:background="@color/colorPrimary"
+            android:text="@string/download"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnDownloads"
+        style="@style/matchWrapStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/small_margin"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/showDownloads"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

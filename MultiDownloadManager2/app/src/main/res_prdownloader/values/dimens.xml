@@ -1,0 +1,8 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+   
+     <dimen name="download_small_margin">10dp</dimen>
+    <dimen name="download_medium_padding">12dp</dimen>
+    <dimen name="download_medium_text_size">20dp</dimen>
+    <dimen name="download_divider">10dp</dimen>
+</resources>

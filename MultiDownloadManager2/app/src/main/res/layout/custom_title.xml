@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/matchWrapStyle"
+    android:minHeight="45dp"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:gravity="right">
+    <RelativeLayout
+        android:id="@+id/custom_title_rl_main"
+        style="@style/matchWrapStyle"
+         android:gravity="center_vertical"
+        android:minHeight="45dp"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageButton
+            android:id="@+id/customtitle_btn_back"
+            style="@style/wrapStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="false"
+            android:background="@drawable/download_ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/customtitle_txt_title"
+            style="@style/wrapStyle"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            />
+
+        <LinearLayout
+            style="@style/wrapStyle"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/customtitle_btn_settings"
+                style="@style/wrapStyle"
+                android:visibility="gone"
+                android:background="@drawable/ic_settings_page" />
+
+            <ImageButton
+                android:id="@+id/customtitle_btn_menu"
+                style="@style/wrapStyle"
+                android:background="@drawable/download_ic_menu" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+ </LinearLayout>

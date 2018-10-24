@@ -1,0 +1,21 @@
+<resources>
+
+
+    <string name="download_emptylist">empty list</string>
+    <string name="download_progress">Progress</string>
+    <string name="download_Complete">Download Complete</string>
+    <string name="download_Paused">Download paused</string>
+    <string name="download_downloading">downloading...</string>
+    <string name="download_downloadError">Download Error</string>
+    <string name="download_removeAll">Remove All</string>
+    <string name="download_cancelAll">Cancel All</string>
+    <string name="download_startAll">Start All</string>
+    <string name="download_completedDownloads">Completed</string>
+    <string name="download_pausedDownloads">Paused</string>
+    <string name="download_allDownloads">All</string>
+    <string name="download_downloads">Downloads List</string>
+    <string name="download_added_to_queue">Download was added to queue</string>
+    <string name="download_found_Before">already in list of dowwnloads</string>
+
+
+</resources>

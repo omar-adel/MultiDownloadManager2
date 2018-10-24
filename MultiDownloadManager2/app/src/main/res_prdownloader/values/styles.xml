@@ -1,0 +1,8 @@
+<resources>
+
+    
+    <style
+        name="download_NotificationTitle"
+        parent="@style/TextAppearance.Compat.Notification.Title" />
+
+</resources>

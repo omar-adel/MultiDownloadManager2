@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/rlInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imgvPauseResume"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/download_small_margin"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="@style/download_NotificationTitle"
+            android:id="@+id/txtvName"
+            android:layout_alignParentLeft="true"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/download_progress"
+            android:id="@+id/txtvProgress"
+            android:textAppearance="@style/download_NotificationTitle"
+            android:layout_marginTop="@dimen/download_small_margin"
+            android:textSize="14dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtvName"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/progressBar"
+            android:layout_alignParentLeft="true"
+            android:indeterminate="true"
+            android:layout_below="@+id/txtvProgress"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgvPauseResume"
+        android:background="@drawable/download_notification_resume"
+        android:layout_toLeftOf="@+id/imgvCancel"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/download_small_margin"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgvCancel"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/download_small_margin"
+        android:layout_marginRight="@dimen/download_small_margin"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/download_notification_cancel"
+        />
+
+</RelativeLayout>
